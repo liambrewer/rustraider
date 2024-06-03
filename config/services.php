@@ -35,4 +35,14 @@ return [
         ],
     ],
 
+    /// https://socialiteproviders.com/Steam
+    'steam' => [
+        'client_id' => null,
+        'client_secret' => env('STEAM_CLIENT_SECRET'),
+        'redirect' => env('APP_URL') . '/auth/steam/callback',
+        'allowed_hosts' => [
+            env('STEAM_ALLOWED_HOST'),
+        ],
+    ],
+
 ];
