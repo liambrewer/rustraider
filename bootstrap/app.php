@@ -12,7 +12,7 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->redirectGuestsTo(fn () => route('home'));
-        $middleware->redirectUsersTo(fn () => route('app.index'));
+        $middleware->redirectUsersTo(fn () => route('app.home'));
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //

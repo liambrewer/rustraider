@@ -14,6 +14,7 @@ export default {
             },
             colors: {
                 background: '#1e2020',
+                paper: '#343534',
                 primary: '#ce422b',
                 text: '#f6eae0',
             },

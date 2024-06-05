@@ -21,4 +21,12 @@ class User extends Authenticatable
         'nickname',
         'avatar',
     ];
+
+    public function groups()
+    {
+        return $this->belongsToMany(Group::class, Member::class)
+            ->withPivot('role')
+            ->as('membership')
+            ->withTimestamps();
+    }
 }
